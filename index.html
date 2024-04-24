@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título del correo</title>
+    <title>Email templates</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mersad&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #00A88A, #835EFD);
+            background: linear-gradient(to right, #32D0F3, #7C59F0);
             margin: 0;
             padding: 0;
             display: flex;
@@ -27,25 +31,52 @@
             height: calc(100% - 80px);
         }
 
-        .header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eeeeee;
+        .image{
+            text-align: left;
         }
 
-        .header h3 {
-            color: #333333;
+
+        .separator {
+            height: 4px;
+            background: linear-gradient(to right, #32D0F3 0%, #2FCD9A 22%, #FC7C23 48%, #7C59F0 100%);
+            border-radius: 2px;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+        .title {
+            color: #131220;
             margin: 0;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Mersad', sans-serif;
+            text-align: left;
         }
 
         .content {
-            padding: 20px 0;
+            font-family: 'Noto Sans', sans-serif;
+            overflow-wrap: break-word;
+            color: #74788D;
+            font-size: 18px;
+            margin-top: 3vh;
+            text-align: left;
+            line-height: 4vh;
+        }
+
+        .contact{
+            font-family: 'Noto Sans', sans-serif;
+            overflow-wrap: break-word;
+            color: #000000;
+            font-size: 14px;
+            text-align: center;
         }
 
         .footer {
             text-align: center;
+            color: #74788D;
+            font-size: 14px;
             padding-top: 20px;
-            border-top: 1px solid #eeeeee;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
@@ -53,21 +84,21 @@
 <body>
     <div class="container">
         <div class="header">
-            <h3>¡Hola [Nombre de la Organización]!</h3>
-        </div>
-        <div class="content">
-            <p>Gracias por registrarte en Semillero. Estamos revisando tu solicitud. </br>
+            <img src="./image.png" class="image" width="150" height="50"> 
+            <div class="separator"></div>
+            <div class="title">¡Hola [Nombre de la Organización]!</div>
+
+            <div class="content">
+                Gracias por registrarte en Semillero. Estamos revisando tu solicitud. </br>
                 En las próximas 48 horas recibirás un correo confirmando tu ingreso a la plataforma.</br>
-                Saludos, El equipo de Semillero </br>
-            </p>
-            <p>¿Necesitas ayuda? Escribinos a info@XXXXX</p>
-        </div>
-        <div class="footer">
-            <p>Semillero brinda oportunidades laborales </br>
-                cooperativas al conectar personas </br>
-                interesadas en trabajar en espacios </br>
-                innovadores con organizaciones que están </br>
-                en la búsqueda.</p>
+                Saludos, </br>
+                El equipo de Semillero </br>
+            </div>
+            <div class="separator"></div>
+            <div class="contact">¿Necesitas ayuda? Escribinos a info@XXXXX </br></div>
+            <div class="footer">
+                Semillero brinda oportunidades laborales cooperativas al conectar personas interesadas en trabajar en espacios innovadores con organizaciones que están en la búsqueda.
+            </div>
         </div>
     </div>
 </body>
