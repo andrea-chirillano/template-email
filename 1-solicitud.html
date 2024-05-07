@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mersad&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mersad:wght@700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -30,7 +31,6 @@
             float: right;
         }
 
-
         .separator {
             height: 4px;
             background: linear-gradient(to right, #32D0F3 0%, #2FCD9A 22%, #FC7C23 48%, #7C59F0 100%);
@@ -41,11 +41,11 @@
 
         .title {
             color: #131220;
-            margin: 0;
             font-size: 35px;
             font-weight: bold;
             font-family: 'Mersad', sans-serif;
             text-align: left;
+            overflow-wrap: break-word;
         }
 
         .content {
@@ -53,17 +53,27 @@
             overflow-wrap: break-word;
             color: #74788D;
             font-size: 18px;
-            margin-top: 3vh;
             text-align: left;
             line-height: 4vh;
+            margin-top: 3vh;
         }
 
-        .contact{
-            font-family: 'Noto Sans', sans-serif;
-            overflow-wrap: break-word;
-            color: #000000;
-            font-size: 14px;
+        .parrafo {
+            margin-bottom: 10px;
+        }
+
+        .button{
+            color: white;
+            background-color: #131220;
+            border-radius: 100px;
+            height: 8vh;
+            width: 20vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            margin-left: auto;
         }
 
         .footer {
@@ -72,6 +82,24 @@
             font-size: 14px;
             padding-top: 20px;
             overflow-wrap: break-word;
+        }
+
+        .contact-container {
+            display: flex; 
+            align-items: center;
+        }
+
+        .contact-image{
+            margin-bottom: -30px;
+        }
+
+        .contact{
+            font-family: 'Noto Sans', sans-serif;
+            overflow-wrap: break-word;
+            color: #000000;
+            font-size: 14px;
+            text-align: right;
+            margin-right: auto;
         }
 
         @media (max-width: 400px) {
@@ -86,11 +114,25 @@
 
         @media (min-width: 401px) {
             .container {
-                padding: 100px;
+                padding-top: 30px;
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 80px;
                 margin-bottom: 200px;
                 margin: 300px;
                 width: calc(100% - 40px);
-                height: calc(100% - 250px);
+                height: calc(100% - 160px);
+            }
+            .title-head {
+                margin-top: 0px;
+                min-height: 100px;
+            }
+            .image{
+                margin-top: -30px;
+            }
+            .title{
+                width: 25vw;
+                margin-top: 20px;
             }
         }
     </style>
@@ -99,17 +141,22 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="./flowers.png" class="image" width="150" height="150"> 
-            <div class="title">¡Hola [Nombre de la Organización]!</div>
-
-            <div class="content">
-                Gracias por registrarte en Semillero. Estamos revisando tu solicitud. </br>
-                En las próximas 48 horas recibirás un correo confirmando tu ingreso a la plataforma.</br>
-                Saludos, </br>
-                El equipo de Semillero </br>
+            <div class="title-head">
+                <img src="./flowers.png" class="image" width="150" height="160"> 
+                <div class="title">¡Bienvenide [Nombre de la Organización]!</div>
             </div>
+            <div class="content">
+                <div class="parrafo">Gracias por registrarte en Semillero. Estamos revisando tu solicitud. </br></div>
+                <div class="parrafo">En las próximas <b>48 horas</b> recibirás un correo confirmando tu ingreso a la plataforma.</br></div>
+                <div class="parrafo">Saludos, El equipo de Semillero </br></div>
+            </div>
+            <div class="button">Activar tu cuenta</div>
             <div class="separator"></div>
-            <div class="contact">¿Necesitas ayuda? Escribinos a info@XXXXX </br></div>
+            <div class="footer-title">
+                <img src="./image.png" class="contact-image" width="100" height="30"> 
+                <div class="contact">¿Necesitas ayuda? Escribinos a info@XXXXX </br></div>
+            </div>
+        
             <div class="footer">
                 Semillero brinda oportunidades laborales cooperativas al conectar personas interesadas en trabajar en espacios innovadores con organizaciones que están en la búsqueda.
             </div>
