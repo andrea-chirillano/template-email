@@ -13,7 +13,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #32D0F3, #7C59F0);
+            background: linear-gradient(to right, #2FCD9A, #7C59F0);
             margin: 0;
             padding: 0;
             display: flex;
@@ -54,7 +54,6 @@
             color: #74788D;
             font-size: 18px;
             text-align: left;
-            line-height: 4vh;
         }
 
         .parrafo {
@@ -99,15 +98,26 @@
                 height: calc(100% - 80px);
             }
             .image{
-                margin-top: -60px;
-                width: 100px;
-                height: 110px;
+                display: none;
+                visibility: hidden;
+            }
+            .image-greeting{
+                display: none;
+                visibility: hidden;
+            }
+            .image-template-greeting{
+                position: absolute;
+                z-index: 1;
+                margin-top: 0px;
+                right: 10vw;
+                top: 20px; 
+                width: 169px;
+                height: 163px;
             }
             .title{
                 visibility: hidden;
-                height: 0px;
+                height: 100px;
                 font-size: 0px;
-                margin-top: 50px;
             }
             .title::before {
                 visibility: visible;
@@ -118,14 +128,20 @@
                 text-align: left;
                 overflow-wrap: break-word;
                 margin-top: 80px;
-                content: "¡Hola \ [Nombre de la Organización]!";
-                white-space: pre-line;
+                content: "¡Bienvenide \A [Nombre de postulante]!";
+                white-space: pre-line; 
+                margin-top: 70px;
+                position: relative;
+                top: 130px;
+                z-index: 40;
             }
             .content{
-                margin-top: 170px;
+                margin-top: 160px;
+                line-height: 2vh;
             }
             .button{
-                display: none;
+                margin-right: auto;
+                margin-top: 20px;
             }
             .footer-title{
                 justify-content: center;
@@ -166,15 +182,35 @@
             }
             .image{
                 margin-top: -60px;
-                width: 188px;
-                height: 210px;
+                width: 248px;
+                height: 285px;
+                position: relative;
+                z-index: 1;
+            }
+            .image-greeting{
+                position: relative;
+                z-index: 2;
+                float: right;
+                left: 250px;
+                width: 210px;
+                height: 151px;
+                bottom: 16px;
+            }
+            .image-template-greeting{
+                display: none;
+                visibility: hidden;
             }
             .title{
-                width: 300px;
+                width: 700px;
                 margin-top: 60px;
             }
             .content{
                 margin-top: 2vh;
+                line-height: 4vh;
+            }
+            .content-min-size{
+                visibility: hidden;
+                height: 0px;
             }
             .contact-container {
                 display: flex; 
@@ -195,15 +231,22 @@
     <div class="container">
         <div class="header">
             <div class="title-head">
-                <img src="./img/flowers.png" class="image"> 
-                <div class="title">¡Bienvenide [Nombre de la Organización]!</div>
+                <img src="./img/oval.png" class="image"> 
+                <img src="./img/greeting.png" class="image-greeting">
+                <img src="./img/template-greeting.png" class="image-template-greeting">
+                <div class="title">¡Bienvenide <br/>[Nombre de Usuarie]!</div>
             </div>
             <div class="content">
-                <div class="parrafo">Gracias por registrarte en Semillero. Estamos revisando tu solicitud. </br></div>
-                <div class="parrafo">En las próximas <b>48 horas</b> recibirás un correo confirmando tu ingreso a la plataforma.</br></div>
-                <div class="parrafo">Saludos, El equipo de Semillero </br></div>
+                <div class="parrafo">¡Felicitaciones! Ahora que tu cuenta está activada, podés:</br></div>
+                <div class="parrafo"><ul>
+                    <li>Publicar tu perfil para buscar oportunidades laborales.</li>
+                    <li>Buscar ofertas laborales que se adapten a tu perfil.</li>
+                    <li>Guardar tus favoritos para un acceso rápido.</li>
+                </ul></div>
+                <div class="parrafo">Pero antes de empezar, te invitamos a completar tu perfil para que puedan conocerte mejor. ¡Gracias por unirte!
+                </div>
             </div>
-            <div class="button">Activar tu cuenta</div>
+            <div class="button">Ir a mi perfil</div>
             <div class="separator"></div>
             <div class="footer-title">
                 <img src="./img/image.png" class="contact-image" width="100" height="25"> 
