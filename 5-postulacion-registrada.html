@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email templates</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mersad&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mersad:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #32D0F3, #7C59F0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+        }
+
+        .image{
+            float: right;
+        }
+
+        .separator {
+            height: 4px;
+            background: linear-gradient(to right, #32D0F3 0%, #2FCD9A 22%, #FC7C23 48%, #7C59F0 100%);
+            border-radius: 2px;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+        .title {
+            color: #131220;
+            font-size: 35px;
+            font-weight: bold;
+            font-family: 'Mersad', sans-serif;
+            text-align: left;
+            overflow-wrap: break-word;
+        }
+
+        .content {
+            font-family: 'Noto Sans', sans-serif;
+            overflow-wrap: break-word;
+            color: #74788D;
+            font-size: 18px;
+            text-align: left;
+            line-height: 4vh;
+        }
+
+        .parrafo {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #74788D;
+            font-size: 14px;
+            padding-top: 20px;
+            overflow-wrap: break-word;
+        }
+
+        .contact{
+            font-family: 'Noto Sans', sans-serif;
+            overflow-wrap: break-word;
+            color: #000000;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1147px) {
+            .container {
+                margin: 20px;
+                margin-bottom: 40px;
+                padding: 20px;
+                width: calc(100% - 40px);
+                height: calc(100% - 80px);
+            }
+            .image{
+                margin-top: -80px;
+                width: 151px;
+                height: 117px;
+            }
+            .title{
+                color: #131220;
+                font-size: 35px;
+                font-weight: bold;
+                font-family: 'Mersad', sans-serif;
+                text-align: left;
+                overflow-wrap: break-word;
+                margin-top: 90px;
+                white-space: pre-line;
+            }
+            .content{
+                margin-top: 20px;
+            }
+            .footer-title{
+                justify-content: center;
+            }
+            .contact-container{
+                justify-content: center;
+            }
+            .contact-image{
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+            }
+            .contact{
+                display:flex;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1148px) {
+            .container {
+                padding-top: 30px;
+                padding-left: 80px;
+                padding-right: 80px;
+                padding-bottom: 80px;
+                margin-bottom: 200px;
+                margin: 300px;
+                width: calc(100% - 40px);
+                height: calc(100% - 160px);
+            }
+            .title-head {
+                margin-top: 0px;
+                min-height: 100px;
+            }
+            .image{
+                margin-top: -60px;
+                width: 231px;
+                height: 178px;
+            }
+            .title{
+                width: 700px;
+                margin-top: 60px;
+            }
+            .content{
+                margin-top: 2vh;
+            }
+            .contact-container {
+                display: flex; 
+                align-items: center;
+            }
+            .contact-image{
+                margin-bottom: -25px;
+            }
+            .contact{
+                text-align: right;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title-head">
+                <img src="./img/computer.png" class="image"> 
+                <div class="title">¡Hola [Nombre Organización]!</div>
+            </div>
+            <div class="content">
+                <div class="parrafo">Tu postulación en Semillero ha sido <b>registrada con éxito.</b></br></div>
+                <div class="parrafo">Tu oferta <b>ya está disponible</b> para que puedan comenzar a postularse.</br></div>
+                <div class="parrafo">Gracias por confiar en Semillero para tu búsqueda laboral. </br></div>
+                <div class="parrafo">Saludos, </br>
+                El equipo de Semillero</br></div>
+            </div>
+            <div class="separator"></div>
+            <div class="footer-title">
+                <img src="./img/image.png" class="contact-image" width="100" height="25"> 
+                <div class="contact">¿Necesitas ayuda? Escribinos a info@XXXXX </br></div>
+            </div>
+        
+            <div class="footer">
+                Semillero brinda oportunidades laborales cooperativas al conectar personas interesadas en trabajar en espacios innovadores con organizaciones que están en la búsqueda.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
